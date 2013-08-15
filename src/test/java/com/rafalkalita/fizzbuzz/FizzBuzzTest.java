@@ -12,4 +12,10 @@ public class FizzBuzzTest {
 		
 		Assert.assertEquals("1", fizzBuzz.generate(1));
 	}
+	
+	@Test
+	public void aValidStringForTwo() {
+		
+		Assert.assertEquals("1 2", fizzBuzz.generate(2));
+	}
 }
