@@ -21,6 +21,12 @@ public class FizzBuzzTest {
 		assertGenerated("1 2", 2);
 	}
 	
+	@Test
+	public void aValidStringForThree() {
+		
+		assertGenerated("1 2 Fizz", 3);
+	}
+	
 	private void assertGenerated(String expected, int number) {
 		
 		assertEquals(expected, fizzBuzz.generate(number));
