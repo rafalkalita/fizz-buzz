@@ -9,10 +9,19 @@ public class FizzBuzz {
 		values = new String[number];
 
 		for (int i = 1; i <= number; i++) {
-			values[i - 1] = i + "";
+			values[i - 1] = generateString(i);
 		}
 
 		return printResult();
+	}
+
+	private String generateString(int i) {
+		
+		if(i == 3) {
+			return "Fizz";
+		}
+		
+		return i + "";
 	}
 
 	private String printResult() {
@@ -20,10 +29,10 @@ public class FizzBuzz {
 		StringBuilder result = new StringBuilder();
 
 		for (int i = 0; i < values.length; i++) {
-			
+
 			result.append(values[i]);
 
-			if (values.length-1 != i) {
+			if (values.length - 1 != i) {
 				result.append(" ");
 			}
 		}
