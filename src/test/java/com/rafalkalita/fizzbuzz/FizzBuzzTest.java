@@ -1,5 +1,7 @@
 package com.rafalkalita.fizzbuzz;
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -10,12 +12,17 @@ public class FizzBuzzTest {
 	@Test
 	public void createsAValidStringForOne() {
 		
-		Assert.assertEquals("1", fizzBuzz.generate(1));
+		assertGenerated("1", 1);
 	}
 	
 	@Test
 	public void aValidStringForTwo() {
 		
-		Assert.assertEquals("1 2", fizzBuzz.generate(2));
+		assertGenerated("1 2", 2);
+	}
+	
+	private void assertGenerated(String expected, int number) {
+		
+		assertEquals(expected, fizzBuzz.generate(number));
 	}
 }
