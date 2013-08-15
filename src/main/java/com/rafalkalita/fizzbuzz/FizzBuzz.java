@@ -21,6 +21,10 @@ public class FizzBuzz {
 			return "Fizz";
 		}
 		
+		if(i == 5) {
+			return "Buzz";
+		}
+		
 		return i + "";
 	}
 
