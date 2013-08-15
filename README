@@ -1,0 +1,6 @@
+FizzBuzz
+
+Given a number from 1 to 100 generate a string with elements from 1 to this given number.
+Elements should be separated by space. For each element dividable by 3 write Fizz and for each element dividable by 5 write Buzz.
+For example for 16 program will generate string:
+1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz 11 Fizz 13 14 FizzBuzz 16
