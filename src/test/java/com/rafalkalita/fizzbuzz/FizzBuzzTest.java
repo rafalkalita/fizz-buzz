@@ -20,11 +20,17 @@ public class FizzBuzzTest {
 		
 		assertGenerated("1 2", 2);
 	}
-	
+
 	@Test
 	public void aValidStringForThree() {
 		
 		assertGenerated("1 2 Fizz", 3);
+	}
+
+	@Test
+	public void aValidStringForFive() {
+		
+		assertGenerated("1 2 Fizz 4 Buzz", 5);
 	}
 	
 	private void assertGenerated(String expected, int number) {
