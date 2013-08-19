@@ -17,7 +17,7 @@ public class FizzBuzz {
 
 	private String generateString(int i) {
 		
-		if(i == 3) {
+		if(i % 3 == 0) {
 			return "Fizz";
 		}
 		
