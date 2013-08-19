@@ -17,6 +17,10 @@ public class FizzBuzz {
 
 	private String generateString(int i) {
 		
+		if(isDividableByThree(i) && isDividableByFive(i)) {
+			return "FizzBuzz";
+		}
+		
 		if(isDividableByThree(i)) {
 			return "Fizz";
 		}
