@@ -43,6 +43,12 @@ public class FizzBuzzTest {
 
 		assertGenerated("1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz", 10);
 	}
+	
+	@Test
+	public void aValidStringForFifteen() {
+		
+		assertGenerated("1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz 11 Fizz 13 14 FizzBuzz", 15);
+	}
 
 	private void assertGenerated(String expected, int number) {
 
