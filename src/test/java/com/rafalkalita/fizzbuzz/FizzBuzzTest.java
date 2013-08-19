@@ -33,6 +33,12 @@ public class FizzBuzzTest {
 		assertGenerated("1 2 Fizz 4 Buzz", 5);
 	}
 	
+	@Test
+	public void aValidStringForSix() {
+		
+		assertGenerated("1 2 Fizz 4 Buzz Fizz", 6);
+	}
+	
 	private void assertGenerated(String expected, int number) {
 		
 		assertEquals(expected, fizzBuzz.generate(number));
