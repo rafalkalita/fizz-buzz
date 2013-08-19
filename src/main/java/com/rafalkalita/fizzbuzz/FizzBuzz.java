@@ -17,15 +17,23 @@ public class FizzBuzz {
 
 	private String generateString(int i) {
 		
-		if(i % 3 == 0) {
+		if(isDividableByThree(i)) {
 			return "Fizz";
 		}
 		
-		if(i % 5 == 0) {
+		if(isDividableByFive(i)) {
 			return "Buzz";
 		}
 		
 		return i + "";
+	}
+
+	private boolean isDividableByFive(int i) {
+		return i % 5 == 0;
+	}
+
+	private boolean isDividableByThree(int i) {
+		return i % 3 == 0;
 	}
 
 	private String printResult() {
